@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #272838;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.score-page-wrapper {
+  --header-font-family: poppins, sans-serif;
+  --body-font-family: "Source Sans Pro", arial, "Helvetica Neue", helvetica,
+    sans-serif;
+  --border-radius: 6px;
+  --color-yellow: #f2b418;
+  --color-dark: #272838;
+  --color-white: #ecf8fd;
+  --color-brown: #815355;
+  --color-taint: #afcbd5;
+  --primary-color: red;
+  --color-black: #000;
+  --color-dark-grey-02: #333;
+  --color-dark-grey-01: #252525;
+  --score-table-img-width: 32px;
+  --score-table-img-width-mob: 20px;
+  padding: 40px 0;
+  width: 750px;
+  margin: 0 auto;
+  font-family: var(--body-font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.score-page-wrapper p {
+  margin: 0;
+}
+.score-page-wrapper a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+@media (max-width: 480px) {
+  .score-page-wrapper {
+    width: 100%;
+    gap: 15px;
+  }
+}
+.score-page-wrapper .page-header {
+  font-family: var(--header-font-family);
+  font-size: 32px;
+  color: var(--color-white);
+  margin-inline-start: 16px;
+  font-weight: 600;
+}
+.score-page-wrapper .score-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .score-wrapper {
+    padding: 0 10px;
+    gap: 15px;
+  }
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-white);
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .score-wrapper .score-header-wrapper {
+    justify-content: start;
+    gap: 15px;
+  }
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .live-btn {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-brown);
+  padding: 8px 10px;
+  font-size: 12px;
+  border-radius: var(--border-radius);
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .live-btn .live-box {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .score-wrapper .score-header-wrapper .search-input {
+    flex: 1;
+  }
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .search-input input {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  height: 100%;
+  background: var(--color-brown);
+  color: var(--color-white);
+  border: 0;
+  padding-inline-start: 8px;
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .search-input input::-moz-placeholder {
+  color: var(--color-taint);
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .search-input input::placeholder {
+  color: var(--color-taint);
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .score-wrapper .score-header-wrapper .search-input input {
+    width: -webkit-fill-available;
+  }
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .calendar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .score-wrapper .score-header-wrapper .calendar-btn {
+    display: none;
+  }
+}
+.score-page-wrapper .score-wrapper .score-header-wrapper .calendar-btn .icon-img {
+  width: 20px;
+  filter: invert(100%);
+}
+.score-page-wrapper .score-wrapper .score-dates {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .score-wrapper .score-dates {
+    justify-content: center;
+    gap: 5px;
+  }
+}
+.score-page-wrapper .score-wrapper .score-dates .score-date {
+  min-width: 85px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.score-page-wrapper .score-wrapper .score-dates .score-date.selected-date {
+  color: var(--color-dark);
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-dark);
+}
+.score-page-wrapper .score-wrapper .score-dates .score-date p {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0;
+}
+.score-page-wrapper .competition-outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.score-page-wrapper .competition-wrapper {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-black);
+  color: var(--color-white);
+}
+.score-page-wrapper .competition-wrapper .competition-name-wrapper {
+  display: flex;
+  gap: 10px;
+  background-color: var(--color-black);
+  padding: 12px;
+  padding-left: 20px;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .competition-wrapper .competition-name-wrapper {
+    font-size: 14px;
+  }
+}
+.score-page-wrapper .competition-wrapper .competition-name-wrapper img {
+  width: var(--score-table-img-width);
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .competition-wrapper .competition-name-wrapper img {
+    width: var(--score-table-img-width-mob);
+  }
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .competition-round {
+  padding: 6px 6px 6px 80px;
+  background-color: var(--color-brown);
+  font-size: 14px;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-dark);
+  padding: 20px;
+  padding-right: 40px;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .competition-wrapper .round-wrapper .row-round-match {
+    padding: 10px;
+    padding-right: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match:nth-child(odd) {
+  background-color: var(--color-brown);
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr minmax(60px, auto) 1fr;
+  grid-template-areas: "status teamA result teamB";
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .full-time {
+  font-size: 13px;
+  grid-area: status;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .full-time.running {
+  color: var(--color-yellow);
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 16px;
+  font-family: var(--header-font-family);
+  justify-content: flex-end;
+  text-align: end;
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team {
+    font-size: 12px;
+    gap: 7px;
+  }
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team:not(:first-of-type) {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team.teamA {
+  grid-area: teamA;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team.teamB {
+  grid-area: teamB;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team .team-logo {
+  width: var(--score-table-img-width);
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team .team-logo {
+    width: var(--score-table-img-width-mob);
+  }
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .team .name-winner {
+  font-weight: 600;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .result-wrapper {
+  grid-area: result;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .result-wrapper .scores {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .result-wrapper .result-team-a,
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .row-match-link .result-wrapper .result-team-b {
+  font-weight: 600;
+  font-size: 15px;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .tv-channel-link {
+  display: flex;
+  gap: 10px;
+  font-family: var(--header-font-family);
+  font-size: 12px;
+  line-height: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .tv-channel-link .channel-cta {
+  font-weight: 700;
+}
+.score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .tv-channel-link .channel-logo {
+  width: var(--score-table-img-width);
+  height: var(--score-table-img-width);
+}
+@media (max-width: 480px) {
+  .score-page-wrapper .competition-wrapper .round-wrapper .row-round-match .tv-channel-link .channel-logo {
+    width: var(--score-table-img-width-mob);
+    height: var(--score-table-img-width-mob);
+  }
+}/*# sourceMappingURL=scores.css.map */
