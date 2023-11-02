@@ -1,3 +1,10 @@
+<!--
+    Discussion Page
+    Filename: discussion.html
+    Date: 11/2/2023
+    Author: Andrew Landry
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -7,10 +14,10 @@
     <!-- Set sizing to be consistent and readable on mobile devices-->
     <meta name="viewport" content ="width=device-width, initial-scale=1.0">
     <title>Discussion</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="discussionDesign.css">
 </head>
 
-
+<!-- NAV for Navigation for website-->
 <body>
     <header> 
         <img src="goalnet.png" alt="Logo" class="header-image"/>
@@ -20,22 +27,28 @@
                 <li> <a href="scores.html">Scores</a></li>
                 <li> <a href="competitions.html">Competitions</a></li>
                 <li> <a href="discussion.html">Discussion</a></li>
-                <li> <a href="streaming.html">Streaming</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <p> this is a sample paragraph text!</p>
-    </section>
+<!-- Main content and posts contained below-->
+    <main>
+        <section id="content">
+            <ariticle class="post">
+                <h2><a href="#"> Post 1 </a></h2>
+                <p class= = "meta">Posted by User1 | 2 hours ago | 10 comments</p>
+                <p> put information here</p>
+                <a href="#"> Read more</a>
+            </ariticle>
 
-    <article>
-        <p> this is a sample article text!</p>
-    </article>
-
-    <aside>
-        <p> this is a sample aside text! </p>
-    </aside>
+            <article class="post">
+                <h2><a href="#"> Post 3 </a></h2>
+                <p class= = "meta">Posted by User3 | 1 day ago | 5 comments</p>
+                <p> put information here</p>
+                <a href="#"> Read more</a>
+            </article>
+        </section>
+    </main>
 
 </body>
 
