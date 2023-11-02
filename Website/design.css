@@ -1,0 +1,86 @@
+/*
+Base Design for Final Project Webpages
+Filename: design.css
+Author: Andrew Landry
+*/
+
+article, aside, details, d1, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+/*Margins, Colors, and Sizing Specifics*/
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html, button, input, select, textarea {
+    font-family: serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*Link and Hypertext Format */
+a {
+    color: rgb(255, 255, 255);
+}
+a:visited {
+    color: #ffffff;
+}
+a:hover {
+    color:rgb(200, 200, 233)
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0;
+}
+
+/*Header Style */
+header {
+    display: flex; /* Flexbox controls the layout */
+    /*justify-content: space-between; /*push elements towards the edge */
+    align-items: center;
+    background-color: #272838;
+}
+
+/*Footer Style */
+footer {
+    background-color: #272838;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* NAV Style */
+nav ul {
+    list-style: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline; /*horizontal display*/
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Image Styles and Media */
+.header-image {
+    width: 180px;
+    height: auto;
+
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: left;
+}
+figure {
+    margin: 0;
+}
