@@ -48,7 +48,7 @@ header {
     display: flex; /* Flexbox controls the layout */
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
-    background-color: #272838;
+    background-color: #815355;
 }
 
 /*Footer Style */
@@ -83,4 +83,81 @@ nav li {
 }
 figure {
     margin: 0;
+}
+
+/* CSS for index.html */
+
+.indexclass
+{
+    background-color: #272838;
+    color: #ECF8FD;
+}
+
+.maincontent
+{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+
+.articles
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.box
+{
+    width: 100%;
+    margin: 5px;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.vboxcontainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vbox
+{
+    width: 50%;
+}
+
+.vbox > img{
+    width: 100%;
+}
+
+.articles > div > img
+{
+    width: 80%;
+    height: 60%;
+}
+
+
+.teamimage > img
+{
+    width: 10%;
+    height: auto;
+    padding-bottom: 8%;
+}
+
+.teambox#teamheader
+{
+    padding-left: 1%;
+}
+
+.articleheader
+{
+    color: #AFCBD5;
+}
+
+.mainheader
+{
+    color: #F2B418;
 }
