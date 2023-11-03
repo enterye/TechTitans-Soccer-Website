@@ -21,12 +21,13 @@
 <body>
     <header> 
         <img src="goalnet.png" alt="Logo" class="header-image"/>
-        <nav>
+        <nav class="header-nav">
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="scores.html">Scores</a></li>
                 <li> <a href="competitions.html">Competitions</a></li>
                 <li> <a href="discussion.html">Discussion</a></li>
+
             </ul>
         </nav>
     </header>
@@ -35,20 +36,42 @@
     <main>
         <section id="content">
             <ariticle class="post">
-                <h2><a href="#"> Post 1 </a></h2>
-                <p class= = "meta">Posted by User1 | 2 hours ago | 10 comments</p>
-                <p> put information here</p>
+                <h2><a href="#"> Key Players to Watch in the 2023 Soccer Championship</a></h2>
+                <p class= = "meta">Posted by messiFTW354 | 2 hours ago | 10 comments</p>
+                <p> Key Players have been making their mark on....</p>
                 <a href="#"> Read more</a>
+
+                <div>
+                    <button onclick="addComment(1)">Add Comment</button>
+                    <ul id="comments-1"></ul>
+                </div>
             </ariticle>
 
             <article class="post">
-                <h2><a href="#"> Post 3 </a></h2>
-                <p class= = "meta">Posted by User3 | 1 day ago | 5 comments</p>
-                <p> put information here</p>
+                <h2><a href="#"> What Contraversial Calls Have You Seen so far in the 2023 Championship? </a></h2>
+                <p class= = "meta">Posted by julio354 | 1 day ago | 5 comments</p>
+                <p> Contraversial calls of the 2023 season include....</p>
                 <a href="#"> Read more</a>
+                <div>
+                    <button onclick="addComment(2)">Add Comment</button>
+                    <ul id="comments-2"></ul>
+                </div>
             </article>
         </section>
     </main>
+
+    <!-- Little Script that adds a comment to a post on the Discussion-->
+    <script>
+        function addComment(postId) {
+            const commentText = prompt('Reply Here: ');
+            if (commentText) {
+                const commentList = document.getElementById(`comments-${postId}`);
+                const newComment = document.createElement('li');
+                newComment.textContent = commentText;
+                commentList.appendChild(newComment);
+            }
+        }
+    </script>
 
 </body>
 

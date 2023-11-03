@@ -28,8 +28,9 @@ body {
 }
 
 /*Link and Hypertext Format */
-a {
+header a {
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 a:visited {
     color: #ffffff;
@@ -50,6 +51,7 @@ header {
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
     background-color: #272838;
+    font-size: 20px;
 }
 
 /*Footer Style */

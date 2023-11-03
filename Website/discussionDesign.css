@@ -28,11 +28,9 @@ body {
 }
 
 /*Link and Hypertext Format */
-a {
+header a {
     color: rgb(255, 255, 255);
-}
-a:visited {
-    color: #ffffff;
+    text-decoration: none;
 }
 a:hover {
     color:rgb(200, 200, 233)
@@ -49,13 +47,16 @@ header {
     display: flex; /* Flexbox controls the layout */
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
-    background-color: #272838;
+    background-color: #08080c;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 /* Discussion Posts Content Design Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #272838;
     margin: 0;
     padding: 0;
 }
@@ -63,11 +64,20 @@ body {
 main {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Set Mininum Height to Viewport Height */
+}
+
+.article.post a {
+    color: black;
+}
+
+.post.meta a {
+    color: rgb(88, 85, 85);
 }
 
 .post {
@@ -100,9 +110,10 @@ h2 a {
 
 /*Footer Style */
 footer {
-    background-color: #272838;
+    background-color: #08080c;
     color: #ffffff;
     text-align: center;
+    min-height: 50px;
 }
 
 /* NAV Style */
@@ -116,8 +127,6 @@ nav li {
     display: inline; /*horizontal display*/
     margin-right: 10px;
     margin-left: 10px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
 }
 
 
