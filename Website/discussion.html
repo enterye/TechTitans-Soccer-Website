@@ -1,3 +1,10 @@
+<!--
+    Discussion Page
+    Filename: discussion.html
+    Date: 11/2/2023
+    Author: Andrew Landry
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -7,35 +14,64 @@
     <!-- Set sizing to be consistent and readable on mobile devices-->
     <meta name="viewport" content ="width=device-width, initial-scale=1.0">
     <title>Discussion</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="discussionDesign.css">
 </head>
 
-
+<!-- NAV for Navigation for website-->
 <body>
     <header> 
-        <img src="assets/images/logo/goalnet.png" alt="Logo" class="header-image"/>
-        <nav>
+        <img src="goalnet.png" alt="Logo" class="header-image"/>
+        <nav class="header-nav">
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="scores.html">Scores</a></li>
                 <li> <a href="competitions.html">Competitions</a></li>
                 <li> <a href="discussion.html">Discussion</a></li>
-                <li> <a href="streaming.html">Streaming</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <section>
-        <p> this is a sample paragraph text!</p>
-    </section>
+<!-- Main content and posts contained below-->
+    <main>
+        <section id="content">
+            <ariticle class="post">
+                <h2><a href="#"> Key Players to Watch in the 2023 Soccer Championship</a></h2>
+                <p class= = "meta">Posted by messiFTW354 | 2 hours ago | 10 comments</p>
+                <p> Key Players have been making their mark on....</p>
+                <a href="#"> Read more</a>
 
-    <article>
-        <p> this is a sample article text!</p>
-    </article>
+                <div>
+                    <button onclick="addComment(1)">Add Comment</button>
+                    <ul id="comments-1"></ul>
+                </div>
+            </ariticle>
 
-    <aside>
-        <p> this is a sample aside text! </p>
-    </aside>
+            <article class="post">
+                <h2><a href="#"> What Contraversial Calls Have You Seen so far in the 2023 Championship? </a></h2>
+                <p class= = "meta">Posted by julio354 | 1 day ago | 5 comments</p>
+                <p> Contraversial calls of the 2023 season include....</p>
+                <a href="#"> Read more</a>
+                <div>
+                    <button onclick="addComment(2)">Add Comment</button>
+                    <ul id="comments-2"></ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Little Script that adds a comment to a post on the Discussion-->
+    <script>
+        function addComment(postId) {
+            const commentText = prompt('Reply Here: ');
+            if (commentText) {
+                const commentList = document.getElementById(`comments-${postId}`);
+                const newComment = document.createElement('li');
+                newComment.textContent = commentText;
+                commentList.appendChild(newComment);
+            }
+        }
+    </script>
 
 </body>
 

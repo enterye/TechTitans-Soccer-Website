@@ -1,6 +1,7 @@
 /*
 Base Design for Final Project Webpages
 Filename: design.css
+Date: 11/2/2023
 Author: Andrew Landry
 */
 
@@ -27,8 +28,9 @@ body {
 }
 
 /*Link and Hypertext Format */
-a {
+header a {
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 a:visited {
     color: #ffffff;
@@ -49,6 +51,7 @@ header {
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
     background-color: #815355;
+    font-size: 20px;
 }
 
 /*Footer Style */
@@ -57,6 +60,7 @@ footer {
     color: #ffffff;
     text-align: center;
 }
+
 
 /* NAV Style */
 nav ul {
@@ -69,6 +73,8 @@ nav li {
     display: inline; /*horizontal display*/
     margin-right: 10px;
     margin-left: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 

@@ -1,0 +1,144 @@
+/*
+Base Design for Final Project Webpages
+Filename: design.css
+Date: 11/2/2023
+Author: Andrew Landry
+*/
+
+article, aside, details, d1, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+/*Margins, Colors, and Sizing Specifics*/
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html, button, input, select, textarea {
+    font-family: serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*Link and Hypertext Format */
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover {
+    color:rgb(200, 200, 233)
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0;
+}
+
+/*Header Style */
+header {
+    display: flex; /* Flexbox controls the layout */
+    /*justify-content: space-between; /*push elements towards the edge */
+    align-items: center;
+    background-color: #08080c;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Discussion Posts Content Design Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #272838;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Set Mininum Height to Viewport Height */
+}
+
+.article.post a {
+    color: black;
+}
+
+.post.meta a {
+    color: rgb(88, 85, 85);
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.meta {
+    color: #888;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    width: 30%;
+    padding-left: 20px;
+}
+
+#content {
+    width: 70%;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+/*Footer Style */
+footer {
+    background-color: #08080c;
+    color: #ffffff;
+    text-align: center;
+    min-height: 50px;
+}
+
+/* NAV Style */
+nav ul {
+    list-style: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline; /*horizontal display*/
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Image Styles and Media */
+.header-image {
+    width: 180px;
+    height: auto;
+
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: left;
+}
+figure {
+    margin: 0;
+}
