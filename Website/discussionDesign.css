@@ -70,6 +70,7 @@ main {
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
+    border: 10px solid #815355;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -83,11 +84,19 @@ main {
 
 .post.meta a {
     color: rgb(88, 85, 85);
+    text-decoration: none;
 }
 
 .post {
     margin-bottom: 20px;
 }
+
+.post h2 {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px; /* Adds rounded corners to border */
+}
+
 
 h2 a {
     text-decoration: none;

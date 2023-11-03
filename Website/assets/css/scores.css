@@ -21,6 +21,17 @@ header {
   font-size: 20px;
 }
 
+footer {
+  text-align: center;
+  /*min-height: 50px;*/
+}
+
+footer {
+  background-color: #815355;
+  color: #ffffff;
+  text-align: center;
+  min-height: 10px;
+}
 /* NAV Style */
 nav ul {
   list-style: none; /* Removes the bullet points */
@@ -67,6 +78,7 @@ a:focus {
 a:hover, a:active {
   outline: 0;
 }
+
 
 .score-page-wrapper {
   --header-font-family: poppins, sans-serif;
