@@ -10,6 +10,64 @@ body {
   min-width: 100vw;
 }
 
+header {
+  display: flex; /* Flexbox controls the layout */
+  /*justify-content: space-between; /*push elements towards the edge */
+  align-items: center;
+  background-color: #815355;
+}
+
+header {
+  font-size: 20px;
+}
+
+/* NAV Style */
+nav ul {
+  list-style: none; /* Removes the bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline; /*horizontal display*/
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Image Styles and Media */
+.header-image {
+  width: 180px;
+  height: auto;
+
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: left;
+}
+figure {
+  margin: 0;
+}
+
+/*Link and Hypertext Format */
+header a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover {
+  color:rgb(200, 200, 233)
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
 .score-page-wrapper {
   --header-font-family: poppins, sans-serif;
   --body-font-family: "Source Sans Pro", arial, "Helvetica Neue", helvetica,
