@@ -51,6 +51,9 @@ header {
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
     background-color: #815355;
+}
+
+header {
     font-size: 20px;
 }
 
