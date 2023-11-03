@@ -109,7 +109,7 @@ file: competitions.html
             display: flex;
             border: 1px solid #ccc;
             padding: 10px;
-            margin: 10px;
+            /*margin: 10px;*/
         }
 
         .team {
@@ -128,20 +128,78 @@ file: competitions.html
             text-align: center;
         }
 
+        header {
+        display: flex; /* Flexbox controls the layout */
+        /*justify-content: space-between; /*push elements towards the edge */
+        align-items: center;
+        background-color: #815355;
+        }
+
+        header {
+        font-size: 20px;
+        }
+
+        /* NAV Style */
+        nav ul {
+        list-style: none; /* Removes the bullet points */
+        margin: 0;
+        padding: 0;
+        }
+
+        nav li {
+        display: inline; /*horizontal display*/
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        }
+
+
+        /* Image Styles and Media */
+        .header-image {
+        width: 180px;
+        height: auto;
+
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+        vertical-align: left;
+        }
+        figure {
+        margin: 0;
+        }
+
+        /*Link and Hypertext Format */
+        header a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        }
+        a:visited {
+        color: #ffffff;
+        }
+        a:hover {
+        color:rgb(200, 200, 233)
+        }
+        a:focus {
+        outline: thin dotted;
+        }
+        a:hover, a:active {
+        outline: 0;
+        }
+
     </style>
 </head>
 <body>
-
-    <div class="main-nav-bar"> <!--Main navigation bar-->
-        <ul>
-            <img src="goalnet.png" alt="goalnet" class="header-image"> <!--Display GoalNet logo-->
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="scores.html">Scores</a></li>
-            <li> <a href="competitions.html">Competitions</a></li>
-            <li> <a href="discussion.html">Discussion</a></li>
-        </ul>
-    </div>
-
+    <header> 
+        <img src="assets/images/logo/goalnet.png" alt="Logo" class="header-image"/>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="scores.html">Scores</a></li>
+                <li> <a href="competitions.html">Competitions</a></li>
+                <li> <a href="discussion.html">Discussion</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="club-name">
         <img src="barcelona.png" alt="logo" style="height:75px;width:75px"> <!--Display club logo-->
         <h1>Club Name</h1> <!--Display club name-->
