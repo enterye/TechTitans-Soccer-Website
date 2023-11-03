@@ -47,10 +47,15 @@ header {
     display: flex; /* Flexbox controls the layout */
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
-    background-color: #08080c;
+    background-color: #815355;
     font-size: 20px;
-    font-family: Arial, sans-serif;
-    color: white;
+}
+
+/*Footer Style */
+footer {
+    background-color: #272838;
+    color: #ffffff;
+    text-align: center;
 }
 
 /* Discussion Posts Content Design Styles */
