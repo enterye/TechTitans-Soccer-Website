@@ -115,10 +115,8 @@ h2 a {
 
 /*Footer Style */
 footer {
-    background-color: #08080c;
-    color: #ffffff;
     text-align: center;
-    min-height: 50px;
+    /*min-height: 50px;*/
 }
 
 /* NAV Style */
