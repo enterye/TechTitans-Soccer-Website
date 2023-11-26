@@ -51,12 +51,6 @@ header {
     font-size: 20px;
 }
 
-/*Footer Style */
-footer {
-    background-color: #815355;
-    color: #ffffff;
-    text-align: center;
-}
 
 /* Discussion Posts Content Design Styles */
 body {
@@ -122,10 +116,20 @@ h2 a {
     margin-bottom: 20px;
 }
 
-/*Footer Style */
+/*Footer Styles */
 footer {
     text-align: center;
     /*min-height: 50px;*/
+}
+
+footer {
+    background-color: #815355;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
 }
 
 /* NAV Style */
@@ -152,6 +156,7 @@ nav li {
     -ms-interpolation-mode: bicubic;
     vertical-align: left;
 }
+
 figure {
     margin: 0;
 }
