@@ -12,9 +12,19 @@ body {
 
 header {
   display: flex; /* Flexbox controls the layout */
-  /*justify-content: space-between; /*push elements towards the edge */
+    /*justify-content: space-between; /*push elements towards the edge */
   align-items: center;
+  border: 5px solid #331f20;
+  font-weight: 550;
   background-color: #815355;
+  font-size: 20px;
+}
+
+header a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -27,11 +37,21 @@ footer {
 }
 
 footer {
-  background-color: #815355;
-  color: #ffffff;
-  text-align: center;
-  min-height: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: #815355;
+    color: #ffffff;
+    text-align: center;
+    border: 5px solid #331f20;
+    padding-bottom: 20px;
 }
+
+footer a {
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* NAV Style */
 nav ul {
   list-style: none; /* Removes the bullet points */
