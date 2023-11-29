@@ -1,6 +1,6 @@
 <!--
 
-Tech Titans Soccer Website
+Tech Titans Soccer Website, Competitions page
 
 Author: Ethan Campbell
 Date: 11-2-2023
@@ -17,144 +17,40 @@ file: competitions.html
         <!-- Set sizing to be consistent and readable on mobile devices-->
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">
         <title>Competitions</title>
-
-    <style>
-
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #272838;
-            color:white;
-        }
-
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
-        .main-nav-bar {
-            background-color: #815355;
-            color: #fff;
-            padding: 10px;
-            margin-bottom: 2%; /*Add space under nav bar*/
-        }
-
-        .header-image {
-            width: 180px;
-            height: auto;
-            border: 0;
-            -ms-interpolation-mode: bicubic;
-            vertical-align: left;
-        }
-
-        .main-nav-bar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex; /*Displays lists side by side*/
-        }
-
-        .main-nav-bar li {
-            display: inline;
-            margin-right: 10px;
-            margin-left: 10px;
-            margin: 0 20px; 
-        }
-
-        .main-nav-bar a {
-            text-decoration: underline; /*Underlines text on nav bar*/
-            color: #fff;
-        }
-
-        .nav-bar2 {
-            background-color: #815355;
-            color: #fff;
-            padding: 10px;
-            width: 60%;
-            margin: 0 auto;
-            margin-top: 2%; /*Adds space on top of the nav bar*/
-        }
-
-        .nav-bar2 ul {
-            list-style-type: none;
-            text-align: center;
-            display: flex;
-        }
-
-        .nav-bar2 li {
-            display: inline;
-            margin: 0 20px; 
-            display: flex;
-        }
-
-        .nav-bar2 a {
-            text-decoration: underline; /*Underlines text on nav bar*/
-            color: #fff;
-        }
-
-        .club-name {
-            background-color: black;
-            color: #F2B418;
-            padding: 20px;
-            text-align: left; 
-            width:65%;
-            margin-left: auto; /*Centers the banner*/
-            margin-right: auto; /*Centers the banner*/
-            display: flex;
-        }
-
-        .matchup {
-            display: flex;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-        }
-
-        .team {
-            flex: 1;
-            text-align: center;
-        }
-
-        .versus {
-            color: #F2B418;
-            flex: 1;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #815355;
-            text-align: center;
-        }
-
-    </style>
+        <link rel="stylesheet" href="competitionsDesign.css"> <!--Link css file-->
 </head>
 <body>
+    <header> 
+        <img src="goalnet.png" alt="Logo" class="header-image"/>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="scores.html">Scores</a></li>
+                <li> <a href="competitions.html">Competitions</a></li>
+                <li> <a href="discussion.html">Discussion</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="main-nav-bar"> <!--Main navigation bar-->
+    <!--Navigation bar that displays the different leagues to choose from. "onclick" ensures that when the text is clicked on
+    the league name and league image will be changed to that respective league-->
+    <div class="nav-bar2">
         <ul>
-            <img src="goalnet.png" alt="goalnet" class="header-image"> <!--Display GoalNet logo-->
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="scores.html">Scores</a></li>
-            <li> <a href="competitions.html">Competitions</a></li>
-            <li> <a href="discussion.html">Discussion</a></li>
+            <li><a href="#" onclick="changeLeague('MLS')">MLS</a></li>
+            <li><a href="#" onclick="changeLeague('NWSL')">NWSL</a></li>
+            <li><a href="#" onclick="changeLeague('Premier League')">Premier League</a></li>
+            <li><a href="#" onclick="changeLeague('LA Liga')">LA Liga</a></li>
+            <li><a href="#" onclick="changeLeague('Bundesliga')">Bundesliga</a></li>
+            <li><a href="#" onclick="changeLeague('Serie A')">Serie A</a></li>
+            <li><a href="#" onclick="changeLeague('Ligue 1')">Ligue 1</a></li>
+            <li><a href="#" onclick="changeLeague('Liga MX')">Liga MX</a></li>
+            <li><a href="#" onclick="changeLeague('UEFA Champions League')">UEFA Champions League</a></li>
+            <li><a href="#" onclick="changeLeague('UEFA Europa League')">UEFA Europa League</a></li>
         </ul>
     </div>
-
-    <div class="club-name">
-        <img src="barcelona.png" alt="logo" style="height:75px;width:75px"> <!--Display club logo-->
-        <h1>Club Name</h1> <!--Display club name-->
-    </div>
-
-    <div class="nav-bar2"> <!--Navigation bar that displays the different cups to choose from-->
-        <ul>
-            <li><a href="#">Premier League</a></li>
-            <li><a href="#">FA Cup</a></li>
-            <li><a href="#">League Cup</a></li>
-            <li><a href="#">UEFA Europa League</a></li>
-            <li><a href="#">Club Friendlies</a></li>
-        </ul>
+    <div class="league-name">
+        <img id="leagueImage" src="LeagueImages/MLS.png" alt="League Image"> <!--Display league logo-->
+        <h1 id="leagueName">MLS</h1> <!--Display league name-->
     </div>
 
     <h3>Upcoming Matchups</h3>
@@ -222,5 +118,7 @@ file: competitions.html
     <footer>
         <p>&copy; 2023 Tech Titans</p>
     </footer>
+
+    <script src="competitionsJS.js"></script> <!--Link JavaScript file-->
 </body>
 </html>

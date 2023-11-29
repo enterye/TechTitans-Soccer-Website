@@ -1,0 +1,132 @@
+/*
+Design for the Competitions webpage
+Filename: competitionsDesign.css
+Date: 11/24/2023
+Author: Ethan Campbell
+*/
+
+header {
+    display: flex; /* Flexbox controls the layout */
+    align-items: center;
+    background-color: #815355;
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #272838;
+    color:white;
+    margin: 0;
+}
+
+/* Main navigation bar */
+nav ul {
+    list-style: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline; /*horizontal display*/
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Image Styles and Media */
+.header-image {
+    width: 180px;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: left;
+}
+
+figure {
+    margin: 0;
+}
+
+/*Link and Hypertext Format */
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color:rgb(200, 200, 233)
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+/*League navigation bar*/
+.nav-bar2 {
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 2%; /*Adds space the bottom of the nav bar*/
+}
+
+.nav-bar2 ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+}
+
+.nav-bar2 li {
+    display: inline;
+    margin: 0 20px; 
+    display: flex;
+}
+
+.nav-bar2 a {
+    color: #fff;
+    padding: 3px 3px;
+    border: 3px solid #fff;
+}
+
+.league-name {
+    background-color: #815355;
+    color: #F2B418;
+    padding: 20px;
+    width:65%;
+    margin-left: auto; /*Centers the banner*/
+    margin-right: auto; /*Centers the banner*/
+    display: flex;
+}
+
+.matchup {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.team {
+    flex: 1;
+    text-align: center;
+}
+
+.versus {
+    color: #F2B418;
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    background-color: #815355;
+    text-align: center;
+}
