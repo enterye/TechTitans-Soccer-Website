@@ -1,0 +1,220 @@
+/*
+Base Design for Final Project Webpages
+Filename: design.css
+Date: 11/2/2023
+Author: Andrew Landry
+*/
+
+article, aside, details, d1, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+/*Margins, Colors, and Sizing Specifics*/
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html, button, input, select, textarea {
+    font-family: serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*Link and Hypertext Format */
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:visited {
+    color: #ffffff;
+}
+a:hover {
+    color:rgb(200, 200, 233)
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0;
+}
+
+/*Header Style */
+header {
+    display: flex; /* Flexbox controls the layout */
+    /*justify-content: space-between; /*push elements towards the edge */
+    align-items: center;
+    border: 5px solid #331f20;
+    font-weight: 550;
+    background-color: #815355;
+    font-size: 20px;
+}
+
+header {
+    font-size: 20px;
+}
+
+/*Footer Style */
+footer {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: #815355;
+    color: #ffffff;
+    text-align: center;
+    border: 5px solid #331f20;
+    padding-bottom: 20px;
+}
+
+footer a {
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* NAV Style */
+nav ul {
+    list-style: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline; /*horizontal display*/
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+
+/* Image Styles and Media */
+.header-image {
+    width: 180px;
+    height: auto;
+
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: left;
+}
+figure {
+    margin: 0;
+}
+
+/* CSS for index.html */
+
+.indexclass
+{
+    background-color: #272838;
+    color: #ECF8FD;
+}
+
+.maincontent
+{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+
+.articles
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.box
+{
+    width: 100%;
+    margin: 5px;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.vboxcontainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vbox
+{
+    width: 50%;
+}
+
+.vbox > img{
+    width: 100%;
+}
+
+.articles > div > img
+{
+    width: 80%;
+    height: 60%;
+}
+
+
+.teamimage > img
+{
+    width: 10%;
+    height: auto;
+    padding-bottom: 8%;
+}
+
+.teambox#teamheader
+{
+    padding-left: 1%;
+}
+
+.articleheader
+{
+    color: #AFCBD5;
+}
+
+.mainheader
+{
+    color: #F2B418;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+  }
+  input.date {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #272838;
+  }
+  input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    cursor: pointer;
+    background-color: #272838;
+  }
+  input.date:hover + button {
+    background-color: #272838;
+  }
+
+  #calendar_text{
+    background-color: #272838;
+    border: none;
+    color: #fff;
+  }
