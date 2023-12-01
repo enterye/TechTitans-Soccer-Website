@@ -1,0 +1,95 @@
+<!--
+    Discussion Page
+    Filename: discussion.html
+    Date: 11/2/2023
+    Author: Andrew Landry
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Set sizing to be consistent and readable on mobile devices-->
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="discussionDesign.css">
+</head>
+
+<!-- NAV for Navigation for website-->
+<body>
+    <header> 
+        <img src="goalnet.png" alt="Logo" class="header-image"/>
+        <nav class="header-nav">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="scores.php">Scores</a></li>
+                <li> <a href="competitions.html">Competitions</a></li>
+                <li> <a href="discussion.html">Discussion</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main content and posts contained below-->
+    <main>
+        <section id="content">
+            <ariticle class="post">
+                <h2><a href="#"> Key Players to Watch in the 2023 Soccer Championship</a></h2>
+                <p class= = "meta">Posted by messiFTW354 | 2 hours ago | 10 comments</p>
+                <p> Key Players have been making their mark on....</p>
+                <a href="#"> Read more</a>
+
+                <div>
+                    <button onclick="addComment(1)">Add Comment</button>
+                    <ul id="comments-1"></ul>
+                    <br />
+                </div>
+            </ariticle>
+
+            <article class="post">
+                <h2><a href="#"> What Contraversial Calls Have You Seen so far in the 2023 Championship? </a></h2>
+                <p class= = "meta">Posted by julio354 | 1 day ago | 5 comments</p>
+                <p> Contraversial calls of the 2023 season include....</p>
+                <a href="#"> Read more</a>
+                <div>
+                    <button onclick="addComment(2)">Add Comment</button>
+                    <ul id="comments-2"></ul>
+                    <br />
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Little Script that adds a comment to a post on the Discussion-->
+    <script>
+        function addComment(postId) {
+            const commentText = prompt('Reply Here: ');
+            if (commentText) {
+                const commentList = document.getElementById(`comments-${postId}`);
+                const newComment = document.createElement('li');
+                newComment.textContent = commentText;
+                commentList.appendChild(newComment);
+            }
+        }
+    </script>
+
+</body>
+
+<footer>
+<p>&copy; 2023 Tech Titans</p>
+<nav class="footer-nav">
+    <ul>
+        <li> <a href="https://www.goal.com/en-us/contact">Contact Us</a></li>
+        <li> <a href="https://www.goal.com/en-us/legal/privacy-policy">Privacy Policy</a></li>
+        <li> <a href="https://www.goal.com/en-us/legal/terms-conditions">Terms of Service</a></li>
+        <li> <a href="https://www.linkedin.com/company/footballco/jobs/">Careers</a></li>
+        <li> <a href="https://twitter.com/TheGoalNet45">Social</a></li>
+        <li> <a href="https://en.goalstudio.com/category/shop/69/">Shop</a></li>
+
+    </ul>
+</nav>
+</footer>
+
+</html>

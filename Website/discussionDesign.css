@@ -34,9 +34,6 @@ header a {
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-a:visited {
-    color: #ffffff;
-}
 a:hover {
     color:rgb(200, 200, 233)
 }
@@ -52,17 +49,79 @@ header {
     display: flex; /* Flexbox controls the layout */
     /*justify-content: space-between; /*push elements towards the edge */
     align-items: center;
+    background-color: #815355;
     border: 5px solid #331f20;
     font-weight: 550;
-    background-color: #815355;
+    /*padding: 5px; */
     font-size: 20px;
 }
 
-header {
-    font-size: 20px;
+
+/* Discussion Posts Content Design Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #272838;
+    margin: 0;
+    padding: 0;
 }
 
-/*Footer Style */
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    border: 10px solid #815355;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Set Mininum Height to Viewport Height */
+}
+
+.article.post a {
+    color: black;
+}
+
+.post.meta a {
+    color: rgb(88, 85, 85);
+    text-decoration: none;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px; /* Adds rounded corners to border */
+}
+
+
+h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.meta {
+    color: #888;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    width: 30%;
+    padding-left: 20px;
+}
+
+#content {
+    width: 70%;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+/*Footer Styles */
 footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
@@ -72,13 +131,14 @@ footer {
     text-align: center;
     border: 5px solid #331f20;
     padding-bottom: 20px;
+    /*min-height: 50px;*/
 }
 
 footer a {
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /* NAV Style */
 nav ul {
@@ -104,83 +164,7 @@ nav li {
     -ms-interpolation-mode: bicubic;
     vertical-align: left;
 }
+
 figure {
     margin: 0;
-}
-
-/* CSS for index.html */
-
-.indexclass
-{
-    background-color: #272838;
-    color: #ECF8FD;
-}
-
-.maincontent
-{
-    position: relative;
-    width: 90%;
-    height: auto;
-}
-
-.articles
-{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.box
-{
-    width: 100%;
-    margin: 5px;
-    margin-top: 0px;
-    padding-top: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-.vboxcontainer
-{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.vbox
-{
-    width: 50%;
-}
-
-.vbox > img{
-    width: 100%;
-}
-
-.articles > div > img
-{
-    width: 80%;
-    height: 60%;
-}
-
-
-.teamimage > img
-{
-    width: 10%;
-    height: auto;
-    padding-bottom: 8%;
-}
-
-.teambox#teamheader
-{
-    padding-left: 1%;
-}
-
-.articleheader
-{
-    color: #AFCBD5;
-}
-
-.mainheader
-{
-    color: #F2B418;
 }
