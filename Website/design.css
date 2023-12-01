@@ -108,7 +108,7 @@ figure {
     margin: 0;
 }
 
-/* CSS for index.html */
+/* CSS for index.html (lane hulsey) */
 
 .indexclass
 {
@@ -156,7 +156,7 @@ figure {
     width: 100%;
 }
 
-.articles > div > img
+.articles  div > img
 {
     width: 80%;
     height: 60%;
@@ -183,4 +183,38 @@ figure {
 .mainheader
 {
     color: #F2B418;
+}
+
+/* CSS for articles (lane hulsey) */
+
+.articlehead
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #AFCBD5;
+}
+
+.articleimage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.authorname
+{
+    font-weight: lighter;
+    text-align: center;
+    color: #ECF8FD;
+}
+
+.articlebody
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: large;
 }
