@@ -1,26 +1,31 @@
 <?php
-    //save variables
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
     //connect to database
     $conn = new mysqli('localhost','root','','goalnet');
-    if($conn->connect_error)
+    if(!$conn)
     {
         die('Connection Failed');
     }
-    else
-    {
-        $stmt = $conn->prepare(select * from userlogin where username like ? and password like ?);
-        $stmt->bind_param("ss", $username, $password);
-        $result = $conn->query($stmt);
-        if($result->num_rows > 0)
-        {
-            echo "user successfully logged in";
+    // Get username and password from the form
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    // Query to check if the user exists
+    $sql = "SELECT * FROM userlogin WHERE username = '$username' AND password = '$password'";
+    $result = mysqli_query($conn, $sql);
+
+    // Check if the query was successful
+    if ($result) {
+        // Check if the user exists
+        if (mysqli_num_rows($result) == 1) {
+            echo "Login successful!";
+            // You can redirect the user to another page here
+        } else {
+            echo "Invalid username or password";
         }
-        else
-        {
-            echo "user not found";
-        }
+    } else {
+        echo "Error: " . mysqli_error($conn);
     }
+
+    // Close the database connection
+    mysqli_close($conn);
 ?>
