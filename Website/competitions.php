@@ -135,7 +135,7 @@ file: competitions.php
             echo "<div class='matchup'>";
             echo "<div class='team-left'>{$row['team1']}</div>";
             echo "<div class='info-middle'>";
-            echo "<p>Date/Time: {$row['time']}</p>";
+            echo "<p>Date/Time: {$row['matchup_time']}</p>";
             echo "<p>Location: {$row['location']}</p>";
             echo "</div>";
             echo "<div class='team-right'>{$row['team2']}</div>";
