@@ -100,7 +100,7 @@ file: competitions.php
     $password = "";
 
     //specify the database name 
-    $database_name = "competitionsdb";
+    $database_name = "goalnet";
 
     // Creating the connection by specifying the connection details
     $conn = mysqli_connect($server_name, $user_name, $password, $database_name);
