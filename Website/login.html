@@ -1,0 +1,83 @@
+<!--by lane hulsey-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body class="indexclass">
+    <!--nav bar-->
+    <header> 
+        <img src="assets/images/logo/goalnet.png" alt="Logo" class="header-image"/>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="scores.html">Scores</a></li>
+                <li> <a href="competitions.html">Competitions</a></li>
+                <li> <a href="discussion.html">Discussion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>   
+    h1
+    {
+        text-align: center;
+    }
+
+    button 
+    {   
+        background-color: #815355;   
+        width: 100%;
+        color: #F2B418;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+    }   
+
+    input[type=text], input[type=password] 
+    {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid #331f20; 
+        box-sizing: border-box;   
+    }  
+
+    button:hover 
+    {   
+        opacity: 0.7;   
+    }   
+
+    .loginpanel
+    {   
+        padding: 25px;   
+    }   
+    </style> 
+    <!--main content of the page-->
+    <h1> GoalNet login </h1>
+    <form action="connect.php" method="post">  
+        <div class="loginpanel">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>       
+        </div>   
+    </form>    
+</body>
+<footer>
+    <p>&copy; 2023 Tech Titans</p>
+    <nav class="footer-nav">
+        <ul>
+            <li> <a href="https://www.goal.com/en-us/contact">Contact Us</a></li>
+            <li> <a href="https://www.goal.com/en-us/legal/privacy-policy">Privacy Policy</a></li>
+            <li> <a href="https://www.goal.com/en-us/legal/terms-conditions">Terms of Service</a></li>
+            <li> <a href="https://www.linkedin.com/company/footballco/jobs/">Careers</a></li>
+            <li> <a href="https://twitter.com/TheGoalNet45">Social</a></li>
+            <li> <a href="https://en.goalstudio.com/category/shop/69/">Shop</a></li>
+    
+        </ul>
+    </nav>
+</footer>
+</html>
