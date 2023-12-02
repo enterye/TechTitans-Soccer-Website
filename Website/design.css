@@ -94,6 +94,12 @@ nav li {
     font-size: 16px;
 }
 
+#login-link {
+    text-align: right;
+    float: right;
+    padding-left: 1100px;
+}
+
 
 /* Image Styles and Media */
 .header-image {
