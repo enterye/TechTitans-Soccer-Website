@@ -6,10 +6,47 @@ Author: Ethan Campbell
 */
 
 header {
-    display: flex; /* Flexbox controls the layout */
+    display: flex; /*Flexbox controls the layout*/
     align-items: center;
     background-color: #815355;
+    border: 5px solid #331f20;
+    font-weight: 550;
     font-size: 20px;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover {
+    color:rgb(200, 200, 233)
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0;
+}
+
+.header-image {
+    width: 180px;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: left;
+}
+
+.upcoming-matchups {
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 body {
@@ -20,7 +57,7 @@ body {
     margin: 0;
 }
 
-/* Main navigation bar */
+/*Main navigation bar*/
 nav ul {
     list-style: none; /* Removes the bullet points */
     margin: 0;
@@ -35,98 +72,19 @@ nav li {
     font-family: Arial, sans-serif;
 }
 
-
-/* Image Styles and Media */
-.header-image {
-    width: 180px;
-    height: auto;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-    vertical-align: left;
-}
-
-figure {
-    margin: 0;
-}
-
-/*Link and Hypertext Format */
-header a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-a:visited {
-    color: #ffffff;
-}
-
-a:hover {
-    color:rgb(200, 200, 233)
-}
-
-a:focus {
-    outline: thin dotted;
-}
-
-a:hover, a:active {
-    outline: 0;
-}
-
-/*League navigation bar*/
-.nav-bar2 {
-    background-color: black;
-    color: #fff;
-    padding: 5px;
-    margin: 0 auto;
-    margin-bottom: 2%; /*Adds space the bottom of the nav bar*/
-}
-
-.nav-bar2 ul {
-    list-style-type: none;
-    text-align: center;
-    display: flex;
-}
-
-.nav-bar2 li {
-    display: inline;
-    margin: 0 20px; 
-    display: flex;
-}
-
-.nav-bar2 a {
-    color: #fff;
-    padding: 3px 3px;
-    border: 3px solid #fff;
-}
-
-.league-name {
-    background-color: #815355;
-    color: #F2B418;
-    padding: 20px;
-    width:65%;
-    margin-left: auto; /*Centers the banner*/
-    margin-right: auto; /*Centers the banner*/
-    display: flex;
-}
-
-.matchup {
-    display: flex;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-}
-
-.team {
-    flex: 1;
-    text-align: center;
-}
-
-.versus {
-    color: #F2B418;
-    flex: 1;
-    text-align: center;
-}
-
 footer {
-    background-color: #815355;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
     text-align: center;
+    background-color: #815355;
+    color: #ffffff;
+    text-align: center;
+    border: 5px solid #331f20;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
