@@ -34,6 +34,7 @@ header a {
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 a:visited {
     color: #ffffff;
 }
@@ -75,6 +76,7 @@ footer {
 }
 
 footer a {
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -92,12 +94,6 @@ nav li {
     margin-right: 10px;
     margin-left: 10px;
     font-size: 16px;
-}
-
-#login-link {
-    text-align: right;
-    float: right;
-    padding-left: 1100px;
 }
 
 
@@ -143,6 +139,8 @@ figure {
     padding-top: 1%;
     padding-left: 3%;
     padding-right: 3%;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vboxcontainer
@@ -160,12 +158,14 @@ figure {
 
 .vbox > img{
     width: 100%;
+    border: 2px solid #000;
 }
 
 .articles  div > img
 {
     width: 80%;
     height: 60%;
+    border: 2px solid #000;
 }
 
 
@@ -181,10 +181,31 @@ figure {
     padding-left: 1%;
 }
 
-.articleheader
-{
+.articleheader {
     font-size: larger;
     color: #AFCBD5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none; 
+    display: inline-block; /* Ensures proper styling */
+}
+.articleheader a {
+    text-decoration: none; 
+    color: #AFCBD5; 
+}
+
+.articleheader p {
+    text-decoration: none;
+    color: #AFCBD5; 
+}
+
+.articles a {
+    text-decoration: none;
+    color: #AFCBD5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.articles a:hover {
+    color:rgb(255, 255, 255);
 }
 
 .mainheader
@@ -197,6 +218,7 @@ figure {
 .articlehead
 {
     text-align: center;
+    text-decoration: none;
     font-weight: bold;
     font-size: 60px;
     color: #AFCBD5;

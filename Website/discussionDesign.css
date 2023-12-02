@@ -154,6 +154,33 @@ nav li {
     font-size: 16px;
 }
 
+/*Style for Image of Posts */
+.post .meta img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 30%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+.post a{
+    color: #333;
+    font-weight: bold;
+}
+
+.post a:hover {
+    color:rgb(200, 200, 233)
+}
+
+.post focus {
+    outline: thin dotted;
+}
+
+.post a:hover, .post a:active {
+    outline: 0;
+}
+
 
 /* Image Styles and Media */
 .header-image {
