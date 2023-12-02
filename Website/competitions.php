@@ -76,7 +76,7 @@ file: competitions.php
         <nav>
             <ul>
                 <li> <a href="index.html">Home</a></li>
-                <li> <a href="scores.html">Scores</a></li>
+                <li> <a href="scores.php">Scores</a></li>
                 <li> <a href="competitions.php">Competitions</a></li>
                 <li> <a href="discussion.html">Discussion</a></li>
                 <li id = "login-link"> <a href="login.html">Login</a></li>
