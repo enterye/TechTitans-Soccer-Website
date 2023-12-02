@@ -16,7 +16,7 @@
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="scores.php">Scores</a></li>
-                <li> <a href="competitions.html">Competitions</a></li>
+                <li> <a href="competitions.php">Competitions</a></li>
                 <li> <a href="discussion.html">Discussion</a></li>
             </ul>
         </nav>

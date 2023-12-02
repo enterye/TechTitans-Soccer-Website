@@ -10,7 +10,7 @@ $user_name = "root";
 $password = "";
 
 //specify the database name 
-$database_name = "scores";
+$database_name = "goalnet";
 
 // Creating the connection by specifying the connection details
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
