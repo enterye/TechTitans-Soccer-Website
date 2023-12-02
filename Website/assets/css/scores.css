@@ -401,3 +401,9 @@ a:hover, a:active {
     height: var(--score-table-img-width-mob);
   }
 }/*# sourceMappingURL=scores.css.map */
+
+.team-logo{
+  height: 40px;
+  width: 40px !important;
+  object-fit: contain;
+}
